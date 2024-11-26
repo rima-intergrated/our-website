@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Marketing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home-page-css-files/header.css">
+
+    <style>
+    .logo-box-container {                        
+      position: relative;
+      margin-top: 150px;
+      margin-bottom: 130px;
+      height: 540px;      
+      display: flex; 
+    }
+
+    .logo-box {                       
+      position: absolute;
+      top: 190px;
+      right: 130px;
+      height: 480px;
+      width: 680px;
+      z-index: 5;
+    } 
+    
+    .logo-box img { 
+      height: 100%;
+      width: 100%;     
+      object-fit: cover;
+    }
+
+    .middle-logo-box-container { 
+                         
+      position: absolute; 
+      top: 0;
+      left: 130px;  
+      height: 200px;
+      width: 600px;
+      font-size: 100px;
+      font-family: Roboto;
+      line-height: 120px;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);      
+    }
+
+    .title-boxes {          
+      position: relative;
+      width: 320px;        
+      height: 140px; 
+      margin-left: 200px;
+      top: 250px;        
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;          
+    }
+
+    .digital-marketing {
+      background-color: rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;          
+      font-size: 12px;
+      font-family: Roboto;
+      color: white;
+
+    }
+    .content-creation {
+      background-color: rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;          
+      font-size: 12px;
+      font-family: Roboto;
+      color: white;
+      left: 135px;
+
+    }
+    .website-development {
+      background-color: rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;          
+      font-size: 12px;
+      color: white;
+      font-family: Roboto;
+
+    }
+    .consultancy {
+      background-color: rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;         
+      font-size: 12px;
+      font-family: Roboto;
+      color: white;
+      left: 160px;
+
+    }
+    .email-marketing {
+      background-color:rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;        
+      font-size: 12px;
+      font-family: Roboto;
+      color: white;
+
+    }
+    .graphic-designing {
+      background-color: rgba(9, 14, 35, 1); 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;        
+      font-size: 12px;
+      font-family: Roboto;
+      color: white;
+      left: 130px;
+
+    }
+
+    .title-box-1 {          
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      top: 0;
+    }
+
+    .title-box-2 {         
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 800px;
+      height: 60px;
+      top: 50px;
+      left: 60px;
+    }
+
+    .title-box-3 {
+      top: 100px;          
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      left: 10px;
+    }
+
+    .content-creation-section {              
+      margin-top: 350px;
+      height: 530px;
+      margin-left: 130px;
+      margin-right: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .content-creation-text {           
+      position: absolute;                
+      width: 640px;
+      height: 300px;
+      left: 0;
+      top: -120px;  
+    }
+
+    .content-creation-title {
+      position: absolute;        
+      height: 60px;
+      width: 640px;
+      top: 0;
+      display: flex;        
+      font-size: 50px;
+      font-family: Roboto;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);
+    }
+
+    .content-creation-paragraph {
+      position: absolute;        
+      height: 100px;
+      width: 365px;
+      top: 80px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      color:  rgba(9, 14, 35, 1);
+      line-height: 17px;
+    }
+
+    .content-creation-image {
+      position: absolute;             
+      width: 600px;
+      height: 400px;
+      right: 0;
+      top: 0;              
+    }
+
+    .content-creation-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-creation-line {
+      position: absolute;
+      background-color: rgba(9, 14, 35, 1);        
+      width: 330px;
+      height: 2px;
+      bottom: 60px;
+    }
+
+    .graphic-designing-section {                  
+      margin-top: 0px;
+      height: 530px;
+      margin-left: 130px;
+      margin-right: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .graphic-designing-text {      
+      position: absolute;                
+      width: 380px;
+      height: 300px;
+      right: 30px;
+      top: 0;  
+    }
+
+    .graphic-designing-title {
+      position: absolute;        
+      height: 60px;
+      width: 500px;
+      top: 0;
+      display: flex;        
+      font-size: 50px;
+      font-family: Roboto;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);
+    }
+
+    .graphic-designing-paragraph {
+      position: absolute;        
+      height: 100px;
+      width: 365px;
+      top: 80px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      color:  rgba(9, 14, 35, 1);
+      line-height: 17px;
+    }
+
+    .graphic-designing-image {
+      position: absolute;             
+      width: 600px;
+      height: 400px;
+      left: 0;
+      top: 0;              
+    }
+
+    .graphic-designing-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .graphic-designing-line {
+      position: absolute;
+      background-color: rgba(9, 14, 35, 1);        
+      width: 330px;
+      height: 2px;
+      bottom: 60px;
+    }
+
+    .web-development-section {                   
+      margin-top: 20px;
+      height: 500px;
+      margin-left: 130px;
+      margin-right: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .web-development-text {      
+      position: absolute;                
+      width: 640px;
+      height: 300px;
+      left: 0;
+      top: 0;  
+    }
+
+    .web-development-title {
+      position: absolute;        
+      height: 60px;
+      width: 640px;
+      top: 0;
+      display: flex;        
+      font-size: 50px;
+      font-family: Roboto;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);
+    }
+
+    .web-development-paragraph {
+      position: absolute;        
+      height: 100px;
+      width: 365px;
+      top: 80px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      color:  rgba(9, 14, 35, 1);
+      line-height: 17px;
+    }
+
+    .web-development-image {
+      position: absolute;             
+      width: 600px;
+      height: 400px;
+      right: 0;
+      top: 0;              
+    }
+
+    .web-development-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .web-development-line {
+      position: absolute;
+      background-color: rgba(9, 14, 35, 1);        
+      width: 330px;
+      height: 2px;
+      bottom: 60px;
+    }
+
+    .digital-marketing-section {                   
+      margin-top: 30px;
+      height: 510px;
+      margin-left: 130px;
+      margin-right: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .digital-marketing-text {            
+      position: absolute;                
+      width: 380px;
+      height: 300px;
+      right: 30px;
+      top: 0;  
+    }
+
+    .digital-marketing-title {      
+      position: absolute;        
+      height: 60px;
+      width: 400px;
+      top: 0;
+      display: flex;        
+      font-size: 50px;
+      font-family: Roboto;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);
+    }
+
+    .digital-marketing-paragraph {     
+      position: absolute;        
+      height: 100px;
+      width: 365px;
+      top: 140px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      color:  rgba(9, 14, 35, 1);
+      line-height: 17px;
+    }
+
+    .digital-marketing-image {
+      position: absolute;             
+      width: 600px;
+      height: 400px;
+      left: 0;
+      top: 0;              
+    }
+
+    .digital-marketing-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .digital-marketing-line {
+      position: absolute;
+      background-color: rgba(9, 14, 35, 1);        
+      width: 330px;
+      height: 2px;
+      bottom: 10px;
+    }
+
+    .email-marketing-section {                   
+      margin-top: 20px;
+      height: 500px;
+      margin-left: 130px;
+      margin-right: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .email-marketing-text {      
+      position: absolute;                
+      width: 640px;
+      height: 300px;
+      left: 0;
+      top: 0;  
+    }
+
+    .email-marketing-title {      
+      position: absolute;        
+      height: 60px;
+      width: 400px;
+      top: 0;
+      display: flex;        
+      font-size: 50px;
+      font-family: Roboto;
+      text-align: start;
+      font-weight: bold;
+      color: rgba(34, 53, 139, 1);
+    }
+
+    .email-marketing-paragraph {      
+      position: absolute;        
+      height: 100px;
+      width: 365px;
+      top: 140px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      color:  rgba(9, 14, 35, 1);
+      line-height: 17px;
+    }
+
+    .email-marketing-image {
+      position: absolute;             
+      width: 600px;
+      height: 400px;
+      right: 0;
+      top: 0;              
+    }
+
+    .email-marketing-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .email-marketing-line {
+      position: absolute;
+      background-color: rgba(9, 14, 35, 1);        
+      width: 330px;
+      height: 2px;
+      bottom: 10px;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="right-header-section">
+        <a href="index.html">
+          <div class="logo-section"><img src="images/FOR EXCEL.png" class="rima-logo"></div>
+        </a>
+
+        <div class="contents-section">
+          <a href="index.html"><div>Home</div></a>
+          <a href="about-us.html"><div>About Us</div></a>
+          <a href="technology.html"><div>Technology</div></a>
+          <a href="multimedia.html"><div>Multimedia</div></a>
+          <a href="digital-marketing.html"><div>Digital Marketing</div></a>
+          <div>Insights</div>
+
+          <button class="get-in-touch-button">
+            Get in touch
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-box-container">
+      <div class="title-boxes">
+
+        <div class="title-box-1">
+          <div class="digital-marketing">Digital Marketing</div>
+          <div class="content-creation">Content Creation</div>
+        </div>
+
+        <div class="title-box-2">
+          <div class="website-development">Website Development</div>
+          <div class="consultancy">Consultancy</div>
+        </div>
+
+        <div class="title-box-3">
+          <div class="email-marketing">Email Marketing</div>
+          <div class="graphic-designing">Graphic Designing</div>
+        </div>      
+        
+        
+      </div> 
+      <div class="logo-box"><img src="images/wrist.PNG"></div>      
+      <div class="middle-logo-box-container">Digital Marketing</div>
+      
+    </div>
+
+    <div class="content-creation-section"> 
+      <div class="content-creation-text">
+        <div class="content-creation-title">Content creation</div>
+          <div class="content-creation-paragraph">
+            Rima Integrated is a pan-African multimedia and technology company based in Lilongwe, Malawi. Its founder, Edwin Laisi, is a passionate entrepreneur with a Bachelor’s in Electronics and Telecommunications Engineering from the prestigious Malawi University of Business and Applied Sciences, formerly known as the University of Malawi, The Polytechnic.          
+          </div>       
+        <div class="content-creation-line"></div>
+      </div>
+      <div class="content-creation-image"><img src="images/multi-2.PNG"></div>            
+    </div>  
+
+    <div class="graphic-designing-section"> 
+      <div class="graphic-designing-text">
+        <div class="graphic-designing-title">Graphic designing</div>
+          <div class="graphic-designing-paragraph">
+            Rima Integrated is a pan-African multimedia and technology company based in Lilongwe, Malawi. Its founder, Edwin Laisi, is a passionate entrepreneur with a Bachelor’s in Electronics and Telecommunications Engineering from the prestigious Malawi University of Business and Applied Sciences, formerly known as the University of Malawi, The Polytechnic.          
+          </div>       
+        <div class="graphic-designing-line"></div>
+      </div>
+      <div class="graphic-designing-image"><img src="images/multi-2.PNG"></div>            
+    </div> 
+
+    <div class="web-development-section"> 
+      <div class="web-development-text">
+        <div class="web-development-title">Web development</div>
+          <div class="web-development-paragraph">
+            Rima Integrated is a pan-African multimedia and technology company based in Lilongwe, Malawi. Its founder, Edwin Laisi, is a passionate entrepreneur with a Bachelor’s in Electronics and Telecommunications Engineering from the prestigious Malawi University of Business and Applied Sciences, formerly known as the University of Malawi, The Polytechnic.          
+          </div>       
+        <div class="web-development-line"></div>
+      </div>
+      <div class="web-development-image"><img src="images/multi-2.PNG"></div>            
+    </div>  
+
+    <div class="digital-marketing-section"> 
+      <div class="digital-marketing-text">
+        <div class="digital-marketing-title">Digital marketing training services</div>
+          <div class="digital-marketing-paragraph">
+            Rima Integrated is a pan-African multimedia and technology company based in Lilongwe, Malawi. Its founder, Edwin Laisi, is a passionate entrepreneur with a Bachelor’s in Electronics and Telecommunications Engineering from the prestigious Malawi University of Business and Applied Sciences, formerly known as the University of Malawi, The Polytechnic.          
+          </div>       
+        <div class="digital-marketing-line"></div>
+      </div>
+      <div class="digital-marketing-image"><img src="images/multi-2.PNG"></div>            
+    </div> 
+
+    <div class="email-marketing-section"> 
+      <div class="email-marketing-text">
+        <div class="email-marketing-title">Email marketing services</div>
+          <div class="email-marketing-paragraph">
+            Rima Integrated is a pan-African multimedia and technology company based in Lilongwe, Malawi. Its founder, Edwin Laisi, is a passionate entrepreneur with a Bachelor’s in Electronics and Telecommunications Engineering from the prestigious Malawi University of Business and Applied Sciences, formerly known as the University of Malawi, The Polytechnic.          
+          </div>       
+        <div class="email-marketing-line"></div>
+      </div>
+      <div class="email-marketing-image"><img src="images/multi-2.PNG"></div>            
+    </div> 
+
+  </body>
+</html>
